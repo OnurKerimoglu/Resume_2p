@@ -112,69 +112,98 @@
 %-------------------------------------------------------------------------------
 %% mandatory information
 % your name
-\cvname{Panda Bear}
+\cvname{Dr. Onur Kerimoglu}
 % job title/career
-\cvjobtitle{Panda Scientist,\\[0.2em] Panda of the Year}
+\cvjobtitle{Data Scientist}
+%,\\[0.2em] Panda of the Year}
 
 %% optional information
 % profile picture
-\cvprofilepic{pics/profile.png}
+\cvprofilepic{pics/A2_Onur_014-Bearbeitet-3_400x600.jpg}
 % logo picture
-\cvlogopic{pics/logo_txt.png}
+%\cvlogopic{pics/logo_txt.png}
 
 % NOTE: ordering in sidebar will mimic the following order
 % date of birth
-\cvbirthday{\today}
-% short address/location, use \newline if more than 1 line is required
-\cvaddress{Park Ave.~1, 555 555 B-Woods}
-% phone number
-\cvphone{+86 555 555 555}
-% personal website
-\cvsite{https://pandascience.net}
-% email address
-\cvmail{panda@bamboo.cn}
-% pgp key
-\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
+\cvbirthday{Born: 13.02.1982, Elbistan, Turkey}
 % any other custom entry
-\cvcustomdata{\faFlag}{Chinese}
+\cvcustomdata{\faFlag}{Citizenship: Germany}
+% short address/location, use \newline if more than 1 line is required
+\cvaddress{Beltgens Garten 12\newline20537 Hamburg}
+% phone number
+\cvphone{+49 176 72375614}
+% email address
+\cvmail{kerimoglu.o@gmail.com}
+% personal website
+\cvsite{sites.google.com/view/onur-kerimoglu}
+% pgp key
+%\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
 
+% include gosquare national flags from https://github.com/gosquared/flags;
+% naming according to ISO 3166-1 alpha-2 country codes
+\graphicspath{{pics/flags/shiny/}}
+	
 %-------------------------------------------------------------------------------
 %                              SIDEBAR 1st PAGE
 %-------------------------------------------------------------------------------
 % add more profile sections to sidebar on first page
 \addtofrontsidebar{
-	% include gosquare national flags from https://github.com/gosquared/flags;
-	% naming according to ISO 3166-1 alpha-2 country codes
-	\graphicspath{{pics/flags/shiny/}}
-
+	
 	% social network accounts incl. proper hyperlinks
 	\sidesection{Social Network}
 		\begin{icontable}{2.5em}{1em}
-			\social{\faLeaf}
-				{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
-				{Overleaf Template Link}
+			%\social{\faLeaf}
+			%	{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+            %	{Overleaf Template Link}
+            \social{\faLinkedin}
+				{https://linkedin.com/in/onur-kerimoglu}
+            	{linkedin.com/in/onur-kerimoglu}
 			\social{\faGithub}
-				{https://github.com/PandaScience/FortySecondsCV}
-				{Github Project Page Link}
+				{https://github.com/OnurKerimoglu}
+				{github.com/OnurKerimoglu}
 		\end{icontable}
+    
+    
+    \sidesection{Technical Skills}
+        \skill{\faChevronRight}{Maths}
+           \skill[2mm]{\faCaretRight}{\footnotesize diff. calculus, linear algebra, statistics}
+        \skill{\faChevronRight}{Programming}
+           \skill[2mm]{\faCaretRight}{\footnotesize Python, R, Fortran (2008)}
+        \skill{\faChevronRight}{Software Engineering}
+           \skill[2mm]{\faCaretRight}{\footnotesize git, Python VE's, Docker, Kubernetes}
+        \skill{\faChevronRight}{Data Management and Processing}
+          \skill[2mm]{\faCaretRight}{\footnotesize \footnotesize SQL, NumPy, Pandas}
+        \skill{\faChevronRight}{Machine Learning} 
+          \skill[2mm]{\faCaretRight}{\footnotesize \footnotesize SciPy, Scikit-learn, PyTorch, TensorFlow,  Keras}
+        %\item Computing Environments 
+        %  \vspace{-2mm} \begin{itemize}[label={}] \item {\footnotesize Experience with HPC clusters} \end{itemize} 
+        %\item Statistics
+        %  \vspace{-2mm} \begin{itemize}[label={}] \item {\footnotesize GLMs, EOF approaches} \end{itemize} 
+        \skill{\faChevronRight}{Data Visualization and Reporting}
+          \skill[2mm]{\faCaretRight}{\footnotesize HTML, CSS, D3, Plotly, Dash, \LaTeX} 
+        %\item Project Managament
+        %  \vspace{-2mm} \begin{itemize}[label={}] \item {\footnotesize Trello} \end{itemize}  
 
-	\sidesection{Languages}
-		\pointskill{\flag{CN.png}}{Chinese}{5}
-		\pointskill{\flag{DE.png}}{German}{3}
-	\pointskill{\flag{GB.png}}{English}{3}
-	\pointskill{\flag{FR.png}}{French}{3}
-
-	\sidesection{Hard Skills}
-		\skill{\faBalanceScale}{Sleeping almost all day}
-		\skill{\faSitemap}{Eating a lot of bamboo sprouts}
-		\skill{\faGraduationCap}{Relaxing rest of the day}
+%         \sidesection{Languages}
+% 		\pointskill{\flag{TR.png}}{Turkish}{5}
+% 		\pointskill{\flag{GB.png}}{English}{5}
+% 		\pointskill{\flag{DE.png}}{German}{4}
+%         \pointskill{\flag{FR.png}}{French}{2}
 
 	\sidesection{Soft Skills}
-		\pointskill{\faHome}{Looking Cute}{4}[4]
-			\skill[1.8em]{\faCompress}{No need to specify further}
-		\pointskill{\faChild}{Chillin' hard}{3}[4]
-			\skill[1.8em]{\faCompress}{On a tree}
-			\skill[1.8em]{\faCompress}{In the grass}
+		\skill{\faChevronRight}{Analytical thinking}
+		\skill{\faChevronRight}{Problem solving}
+		\skill{\faChevronRight}{Communication}
+		\skill{\faChevronRight}{Adaptability}
+		\skill{\faChevronRight}{Leadership, Supervision}
+
+ 
+% 	\sidesection{Soft Skills}
+% 		\pointskill{\faHome}{Looking Cute}{4}[4]
+% 			\skill[1.8em]{\faCompress}{No need to specify further}
+% 		\pointskill{\faChild}{Chillin' hard}{3}[4]
+% 			\skill[1.8em]{\faCompress}{On a tree}
+% 			\skill[1.8em]{\faCompress}{In the grass}
 }
 
 
@@ -187,12 +216,14 @@
 \definecolor{pastelyellow}{HTML}{F6F6EB}
 
 \addtobacksidebar{
-	\sidesection{About Me}
-	\aboutme{
-		The giant panda is a terrestrial animal and primarily spends its life
-		roaming and feeding in the bamboo forests of the Qinling Mountains and in
-		the hilly province of Sichuan.
-	}
+    
+
+% 	\sidesection{About Me}
+% 	\aboutme{
+% 		The giant panda is a terrestrial animal and primarily spends its life
+% 		roaming and feeding in the bamboo forests of the Qinling Mountains and in
+% 		the hilly province of Sichuan.
+% 	}
 
 	\sidesection{Diagrams}
 	\begin{sidebarminipage}
@@ -231,13 +262,19 @@
 	\barskill[1ex]{\faSkyatlas}{Wearing asian rice hats}{60}
 	\barskill[2ex]{\faImage}{Playing Chess}{30}
 	\barskill[3ex]{\faMusic}{Playing the bamboo flute}{50}
-
-	\sidesection{Memberships}
-	\begin{memberships}
-		\membership[4em]{pics/logo.png}{PandaScience.net}
-		\membership[4em]{pics/logo.png}{Some longer text spanning over more than
-			only one line}
-	\end{memberships}
+    
+    \sidesection{Languages}
+    \pointskill{\flag{TR.png}}{Turkish}{5}
+    \pointskill{\flag{GB.png}}{English}{5}
+    \pointskill{\flag{DE.png}}{German}{4}
+    \pointskill{\flag{FR.png}}{French}{2}
+        
+% 	\sidesection{Memberships}
+% 	\begin{memberships}
+% 		\membership[4em]{pics/logo.png}{PandaScience.net}
+% 		\membership[4em]{pics/logo.png}{Some longer text spanning over more than
+% 			only one line}
+% 	\end{memberships}
 }
 
 

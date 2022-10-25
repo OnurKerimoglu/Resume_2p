@@ -77,7 +77,7 @@
 \newlength\leftrightmargin%
 \newlength\sidebartextwidth
 % default values
-\setlength{\sidebarwidth}{0.34\paperwidth}
+\setlength{\sidebarwidth}{0.38\paperwidth}
 \setlength{\topbottommargin}{0.02\paperheight}
 \setlength{\leftrightmargin}{0.02\paperwidth}
 % user overwrites
@@ -87,20 +87,20 @@
 
 % profile picture settings
 \newlength\profilepicsize%
-\setlength{\profilepicsize}{0.7\sidebarwidth}
+\setlength{\profilepicsize}{0.6\sidebarwidth}
 \DeclareOptionX{profilepicsize}{\setlength{\profilepicsize}{#1}}
 \newlength\profilepicborderwidth%
 \setlength{\profilepicborderwidth}{3.5pt}
 \DeclareOptionX{profilepicborderwidth}{\setlength{\profilepicborderwidth}{#1}}
 \newcommand*{\profilepicstyle}{}
 \DeclareOptionX{profilepicstyle}{\renewcommand{\profilepicstyle}{#1}}
-\newcommand*{\profilepiczoom}{}
+\newcommand*{\profilepiczoom}{1.0}
 \DeclareOptionX{profilepiczoom}{\renewcommand{\profilepiczoom}{#1}}
 \newlength\profilepicxshift
 \setlength{\profilepicxshift}{0mm}
 \DeclareOptionX{profilepicxshift}{\setlength{\profilepicxshift}{#1}}
 \newlength\profilepicyshift
-\setlength{\profilepicyshift}{0mm}
+\setlength{\profilepicyshift}{-10mm}
 \DeclareOptionX{profilepicyshift}{\setlength{\profilepicyshift}{#1}}
 \newlength\profilepicrounding
 \setlength{\profilepicrounding}{0.15\sidebarwidth}
