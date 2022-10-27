@@ -51,6 +51,8 @@
 % pre-define some colors the user can choose from
 \definecolor{cvblue}{HTML}{0E5484}
 \definecolor{cvgreen}{HTML}{007170}
+\definecolor{blue}{HTML}{6CE0F1}
+\definecolor{pblue}{HTML}{0395DE}
 \definecolor{cvred}{HTML}{8B0000}
 \definecolor{cvsidecolor}{HTML}{E7E7E7}
 \definecolor{cvsectioncolor}{HTML}{0395DE}
@@ -748,7 +750,7 @@
 		\else%
 			\parbox[t]{\linewidth-\widthof{\footnotesize #3}-1em}{\raggedright \textbf{#2}}%
 			\hfill {\footnotesize#3} \\%
-			\textcolor{itemtextcolor}{#4}%\vspace{\parsep}%
+			\textcolor{itemtextcolor}{#4}\vspace{3mm} %\parsep}%
 		\fi%
 	}\\
 }
