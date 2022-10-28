@@ -79,9 +79,9 @@
 \newlength\leftrightmargin%
 \newlength\sidebartextwidth
 % default values
-\setlength{\sidebarwidth}{0.38\paperwidth}
+\setlength{\sidebarwidth}{0.4\paperwidth}
 \setlength{\topbottommargin}{0.02\paperheight}
-\setlength{\leftrightmargin}{0.02\paperwidth}
+\setlength{\leftrightmargin}{0.04\paperwidth}
 % user overwrites
 \DeclareOptionX{sidebarwidth}{\setlength{\sidebarwidth}{#1}}
 \DeclareOptionX{topbottommargin}{\setlength{\topbottommargin}{#1}}
@@ -265,7 +265,7 @@
 \newcommand*{\cvsection}[1]{\section*{#1}}
 \titleformat{\section}%
 	{\color{sectioncolor}\normalfont\bfseries\LARGE}{}{0pt}{}
-\titlespacing*{\section}{0pt}{1.5ex}{1ex}
+\titlespacing*{\section}{0pt}{2ex}{2ex}
 
 % grey subsection style for right column
 \newcommand*{\cvsubsection}[1]{\subsection*{#1}}
@@ -281,7 +281,7 @@
 	{\color{pseccolor}\sectionline}%
 % set spaces before and after sidesections: <left><before><after>
 % "starred version kills the indentation of the paragraph following the title"
-\titlespacing*{\subsubsection}{0pt}{1ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{0.5ex}{1ex}
 
 
 %-------------------------------------------------------------------------------
@@ -598,7 +598,8 @@
 
 \newcommand{\cvsignature}{
 	\vfill
-	{\large\bfseries\color{maincolor!70}\today \hfill \cvname}
+	%{\large\bfseries\color{maincolor!70}\today \hfill \cvname}
+	{\large\bfseries\color{maincolor!70}\today\\ \cvname}
 }
 
 
