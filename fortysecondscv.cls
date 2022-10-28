@@ -352,7 +352,7 @@
 \newcommand*{\cvbirthday}[1]{\cvcustomdata{\faUser}{#1}}
 \newcommand*{\cvaddress}[1]{\cvcustomdata{\faEnvelope}{#1}}
 \newcommand*{\cvphone}[1]{\cvcustomdata{\faPhone}{\href{tel:#1}{#1}}}
-\newcommand*{\cvsite}[1]{\cvcustomdata{\faGlobe}{\href{#1}{#1}}}
+\newcommand*{\cvsite}[2]{\cvcustomdata{\faGlobe}{\href{#1}{#2}}}
 \newcommand*{\cvmail}[1]{\cvcustomdata{\faAt}{\href{mailto:#1}{#1}}}
 \newcommand*{\cvkey}[2]{\cvcustomdata{\faKey}{%
 	\href{https://keyserver.ubuntu.com/pks/lookup?search=#2\&op=vindex\&fingerprint=on}{#1}%
