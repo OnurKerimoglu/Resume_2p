@@ -127,7 +127,7 @@
 
 % NOTE: ordering in sidebar will mimic the following order
 % date of birth
-\cvbirthday{Born: 13.02.1982, Elbistan, Turkey}
+%\cvbirthday{Born: 13.02.1982, Elbistan, Turkey}
 % any other custom entry
 \cvcustomdata{\faFlag}{Citizenship: Germany}
 % short address/location, use \newline if more than 1 line is required
@@ -171,7 +171,7 @@
         \skill{\faChevronRight}{Programming}
            \skill[2mm]{\faCaretRight}{\footnotesize Python, R, Fortran (2008)}
         \skill{\faChevronRight}{Software Engineering}
-           \skill[2mm]{\faCaretRight}{\footnotesize git, Python VE's, Docker, Kubernetes}
+           \skill[2mm]{\faCaretRight}{\footnotesize Git, Python VE's, Docker}
         \skill{\faChevronRight}{Data Management and Processing}
           \skill[2mm]{\faCaretRight}{\footnotesize \footnotesize SQL, NumPy, Pandas}
         \skill{\faChevronRight}{Machine Learning} 
@@ -275,7 +275,7 @@
 
 \cvsection{Profile Summary}
 
-I'm a data scientist with expertise in building and deploying machine learning models. Previously, I worked as a researcher in the field of biogeochemical modelling. Through my research activities, I gained 15+ years of experience in programming, managing and contributing to open-source projects, building data pipelines and model evaluation platforms, authored 30+ scientific publications and 80+  presentations, acquired 700,000+ \texteuro~ funding through grant proposals, led research projects, and supervised junior researchers at MS, PhD and Postdoc level. For further details and a detailed CV, see my \href{https://sites.google.com/view/onur-kerimoglu}{\color{pblue}{website}}.
+I'm a data scientist with expertise in building classical machine learning and deep learning models. Previously, I worked as a researcher in the field of biogeochemical modelling. Through my research activities, I gained 15+ years of experience in programming, managing and contributing to open-source projects, building data pipelines and model evaluation platforms, authored 30+ scientific publications and 80+  presentations, acquired 700,000+ \texteuro~ funding through grant proposals, led research projects, and supervised junior researchers at MS, PhD and Postdoc level. For further details and a detailed CV, see my \href{https://sites.google.com/view/onur-kerimoglu}{\color{pblue}{website}}.
 
 
 % \cvsection{section}
@@ -295,10 +295,11 @@ I'm a data scientist with expertise in building and deploying machine learning m
 	{\textit{Tasks}: 
     \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
      \setlength\itemsep{1mm}
-     \item Prototyping and productionizing of ML models
+     \item Prototyping, productionizing and deployment of ML models
     \end{itemize}
-    \textit{Tech stack:} SQL, Python Pandas, SciPy, Scikit-learn, TensorFlow, Keras, PyTorch, Docker\\
-    \textit{Example project:}\\
+    \textit{Tech stack:} SQL, Python Pandas, SciPy, Scikit-learn, TensorFlow, Keras, PyTorch, Docker, AWS\\
+    \textit{Example projects:}\\
+    \href{https://onurkerimoglu-accindex-main-n021i3.streamlit.app/}{\color{pblue}{AccIndex (Demo)}}: accident frequency along the shortest route between two given addresses in Berlin (in progress, next step: using a GNN, predict based on the past accident data and other features like population density, area use, etc).\\
     \href{https://github.com/OnurKerimoglu/Dengue}{\color{pblue}{Dengue}}: predicting disease spread using decision tree, random forest, XGBoost and gradient boosting regressors.
     }
     
@@ -307,10 +308,10 @@ I'm a data scientist with expertise in building and deploying machine learning m
 	{\textit{Tasks}:
 	\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
      \item Leading a project funded by \href{https://www.dfg.de/en}{\color{blue}{DFG}}
-     \item Mathematical development, computer implementation and rigorous testing of a physiological model of phytoplankton, co-supervision of a postdoctoral scientist on the topic.%, in collaboration with colleageus in JSPS (Japan), GEOMAR (Germany) and Uni. Liverpool (UK) \item Extension of a model for simulating a lab experiment on microorganismal growth, coagulation/flocculation and nutrient recycling processes  % in collaboration with colleagues in ICBM 
-     \item Co-supervision of a postdoctoral scientist on adaptation of a numerical model for simulating the biogeochemistry of a coastal system
+     \item Development, implementation and rigorous testing of a physiological model of phytoplankton, co-supervision of a postdoctoral scientist.%, in collaboration with colleageus in JSPS (Japan), GEOMAR (Germany) and Uni. Liverpool (UK) \item Extension of a model for simulating a lab experiment on microorganismal growth, coagulation/flocculation and nutrient recycling processes  % in collaboration with colleagues in ICBM 
+     \item Adaptation of a numerical model for simulating the biogeochemistry of a coastal system; co-supervision of (another) postdoctoral scientist.
     \end{itemize}
-      \textit{Tech stack:} Python, R, Fortran, git, \LaTeX, Linux, HPC system\\  
+      \textit{Tech stack:} Python, R, Fortran, git, \LaTeX, Linux, HPC\\  
       \textit{Open-source software produced}:\\
       \href{https://github.com/OnurKerimoglu/fabm-nflexpd}{\color{pblue}{FABM-NflexPD}}: A modular NPD model with a flexible P component, implemented as a FABM library\\
       \href{https://github.com/OnurKerimoglu/R-EcoMol}{\color{pblue}{R-EcoMol}}: A set of R scripts to read, process and visualize mesocosm (EcoMol) experiments.\\
@@ -333,7 +334,7 @@ I'm a data scientist with expertise in building and deploying machine learning m
 	\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
      \item Leading a project funded by \href{https://www.umweltbundesamt.de/en}{\color{blue}{UBA}}
         \item Development of a 3-D coupled physical-biogeochemical model, and its first time application on the North Sea
-        \item Supervision of a postdoctoral scientist on hindcasting and analyzing the environmental state of the system
+        \item Supervision of a postdoctoral scientist on hindcasting and analyzing the state of the system
         \item Preparation of interim-reports in german
     \end{itemize}
       \textit{Tech stack:} Python, Fortran, git, \LaTeX, Linux, HPC system\\
@@ -459,7 +460,7 @@ I'm a data scientist with expertise in building and deploying machine learning m
 \cvsection{Education and Training}
 \begin{cvtable}[1.0]
 	\cvitem{09.2022 -- Present}{Data Science Bootcamp}{\href{https://datascienceretreat.com}{\color{pblue}{Data Science Retreat, Germany}}}
-		{Lectures, hands-on projects on various subjects and a 3-week final project on development and deployment of ML models, with an emphasis on NNs in the context of NLP, computer vision and image processing.}
+		{Lectures, hands-on projects on various subjects and a 3-week final project on development and deployment of ML models, with an emphasis on DL in the context of NLP, computer vision and graphs.}
 	\cvitem{05.2008 -- 10.2011}{PhD, Theoretical Ecology}{\href{https://www.uni-konstanz.de/}{\color{pblue}{Uni. Konstanz, Germany}}}
 		{\href{https://kops.uni-konstanz.de/bitstream/handle/123456789/16454/Kerimoglu_2011_PhD_Dissertation.pdf?isAllowed=y&sequence=1}{\color{pblue}{Thesis}} on development of a 1-Dimensional coupled physical-biological model for the simulation of Lake Constance and theoretical analysis of phytoplankton competition in heterogeneous environments.}
 	\cvitem{09.2005 -- 02.2008}{MSc, Biology}{\href{https://www.metu.edu.tr}{\color{pblue}{METU, Turkey}}}
