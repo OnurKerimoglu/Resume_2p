@@ -600,6 +600,7 @@
 	\vfill
 	%{\large\bfseries\color{maincolor!70}\today \hfill \cvname}
 	{\large\bfseries\color{maincolor!70}\today\\ \cvname}
+	%{\large\bfseries\color{maincolor!70}\cvname}
 }
 
 
