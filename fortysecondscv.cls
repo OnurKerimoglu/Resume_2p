@@ -150,7 +150,7 @@
 
 % date column width
 \newlength\datecolwidth
-\setlength{\datecolwidth}{0.17\textwidth}
+\setlength{\datecolwidth}{0.13\textwidth}
 \DeclareOptionX{datecolwidth}{\setlength{\datecolwidth}{#1}}
 
 % pass further options to base class and load it
@@ -265,7 +265,7 @@
 \newcommand*{\cvsection}[1]{\section*{#1}}
 \titleformat{\section}%
 	{\color{sectioncolor}\normalfont\bfseries\LARGE}{}{0pt}{}
-\titlespacing*{\section}{0pt}{2ex}{2ex}
+\titlespacing*{\section}{0pt}{2ex}{1ex}
 
 % grey subsection style for right column
 \newcommand*{\cvsubsection}[1]{\subsection*{#1}}
