@@ -131,13 +131,18 @@
 % any other custom entry
 \cvcustomdata{\faFlag}{Citizenship: Germany}
 % short address/location, use \newline if more than 1 line is required
-\cvaddress{Beltgens Garten 12\newline20537 Hamburg}
+%\cvaddress{Beltgens Garten 12\newline20537 Hamburg, Germany}
+\cvlocation{Hamburg, Germany}
 % phone number
 \cvphone{+49 176 72375614}
 % email address
 \cvmail{kerimoglu.o@gmail.com}
 % personal website
 \cvsite{https://sites.google.com/view/onur-kerimoglu}{sites.google.com/view/onur-kerimoglu}
+% linkedIn
+\cvlinkedin{https://linkedin.com/in/onur-kerimoglu}{linkedin.com/in/onur-kerimoglu}
+% GitHub
+\cvgithub{https://github.com/OnurKerimoglu}{github.com/OnurKerimoglu}
 % pgp key
 %\cvkey{4096R/FF00FF00}{0xAABBCCDDFF00FF00}
 
@@ -151,19 +156,19 @@
 % add more profile sections to sidebar on first page
 \addtofrontsidebar{
 	
-	% social network accounts incl. proper hyperlinks
-	\sidesection{Social Network}
-		\begin{icontable}{2.5em}{1em}
-			%\social{\faLeaf}
-			%	{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
-            %	{Overleaf Template Link}
-            \social{\faLinkedin}
-				{https://linkedin.com/in/onur-kerimoglu}
-            	{linkedin.com/in/onur-kerimoglu}
-			\social{\faGithub}
-				{https://github.com/OnurKerimoglu}
-				{github.com/OnurKerimoglu}
-		\end{icontable}
+% 	% social network accounts incl. proper hyperlinks
+% 	\sidesection{Social Network}
+% 		\begin{icontable}{2.5em}{1em}
+% 			%\social{\faLeaf}
+% 			%	{https://de.overleaf.com/latex/templates/forty-seconds-cv/pztcktmyngsk}
+%             %	{Overleaf Template Link}
+%             \social{\faLinkedin}
+% 				{https://linkedin.com/in/onur-kerimoglu}
+%             	{linkedin.com/in/onur-kerimoglu}
+% 			\social{\faGithub}
+% 				{https://github.com/OnurKerimoglu}
+% 				{github.com/OnurKerimoglu}
+% 		\end{icontable}
     
     \sidesection{Technical Skills}
         \skill{\faChevronRight}{Maths}
@@ -171,7 +176,8 @@
         \skill{\faChevronRight}{Programming Languages}
            \skill[2mm]{\faCaretRight}{\footnotesize Python, R, SQL, Fortran (2008), MATLAB}
         \skill{\faChevronRight}{Machine Learning} 
-          \skill[2mm]{\faCaretRight}{\footnotesize \footnotesize SciPy, Scikit-learn, PyTorch, TensorFlow,  Keras}
+          \skill[2mm]{\faCaretRight}{\footnotesize \footnotesize SciPy, Scikit-learn, TensorFlow,  Keras, PyTorch, FastAI, OpenCV, Faiss, spaCy}
+          %\skill[4mm]{}{\footnotesize \footnotesize OpenCV, Faiss, spaCy\\}
         \skill{\faChevronRight}{Development \& MLOps}
            \skill[2mm]{\faCaretRight}{\footnotesize Git, Shell scripting, FastAPI, Docker, AWS}
         \skill{\faChevronRight}{Data Management and Processing}
@@ -276,9 +282,10 @@
 \makefrontsidebar
 
 \cvsection{Profile Summary}
-I am a data scientist with expertise in prototyping and productionizing machine learning models.
-I have 15+ years experience in programming, building platforms for wrangling, analysis and visualization of data, and developing mathematical and statistical models.
-Having published 30+ scientific publications and 90+ presentations, and having led several research projects in academia and industry, I am comfortable in managing projects, supervising team members, dealing with complex problems and communicating them in interdisciplinary environments.
+I am a data scientist with %expertise in prototyping and productionizing machine learning models. I have 
+15+ years experience in programming, building platforms for data wrangling and analysis, and developing mathematical, numerical and ML models.
+%Having published 30+ scientific publications and 90+ presentations, and 
+Having led several research projects in both industry and academia, I am comfortable in managing projects, supervising team members, dealing with complex problems and communicating them with stakeholders having technical and non-technical bakgrounds.
 As a continuous learner, I enjoy discovering current technologies and developing principled AI solutions to various technical challenges.
 
 % \cvsection{section}
@@ -304,15 +311,17 @@ As a continuous learner, I enjoy discovering current technologies and developing
 	{\textit{Tasks}: 
     \begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
      \setlength\itemsep{1mm}
+     \item 60\% data scientist, 40\% PO/TL/SM of the backend of an AI-powered CRM system served in scale
+     \item Developing NLP-based solutions to text normalization and matching problems
      \item Overseeing the daily tasks of a team of 7 data scientists, data \& ML engineers
-     \item Planning sprints, leading scrum meetings, managing backlog
-     \item Aligning with the cross-functional teams for the resolution of bugs and implementation of new features
+     \item Planning sprints, leading scrum meetings
+     \item Contribute to definition of OKRs and managing the backlog accordingly
+     \item Aligning with other teams for the resolution of issues and implementation of new features
      \item Monitoring progress and challenges and communicating these with the project managers
-     \item Contributing to the product development and prototyping and productionizing ML-based solutions   
     \end{itemize}
-    \textit{Tech stack:} Jira, Google Bigquery \& Vertex AI, Python Pandas, faiss, spacy NLP models\\
+    \textit{Tech stack:} Jira, Google Bigquery \& Vertex AI, Python Pandas, faiss, spacy NLP models
     }
-    
+     
     \cvitem{01.2023 -- 03.2023}{Personal Projects}
 	{}
 	{\textit{Activities}: 
@@ -324,7 +333,7 @@ As a continuous learner, I enjoy discovering current technologies and developing
     \textit{Open-source software and blogposts}:\\
     \href{https://huggingface.co/spaces/OnurKerimoglu/facemoods}{\color{pblue}{FaceMoods}}: predicting emotions on human faces detected in images using CV models \\ %an object detection model chained to a fine-tuned image classification model \\ %using an OpenCV face-detection model chained to a pretrained image classification model fine-tuned with Keras \& TensorFlow.\\
     \href{https://medium.com/@kerimoglu.o}{\color{pblue}{Medium Profile}}: blogposts on various DS topics\\
-    \href{https://onurkerimoglu.github.io/}{\color{pblue}{GitHub.io Pages}}: \href{https://quarto.org/}{\color{pblue}{quarto}} blogs based on Jupyter NB's\\
+    \href{https://onurkerimoglu.github.io/}{\color{pblue}{GitHub.io Pages}}: \href{https://quarto.org/}{\color{pblue}{quarto}} blogs based on Jupyter NB's
     }
     
     \cvitem{09.2022 -- 12.2022}{Data Science Bootcamp}
@@ -343,7 +352,7 @@ As a continuous learner, I enjoy discovering current technologies and developing
 	{\href{https://uol.de/en/icbm}{\color{pblue}{Uni. Oldenburg, Germany}}}
 	{\textit{Tasks}:
 	\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
-     \item Leading a project funded by \href{https://www.dfg.de/en}{\color{blue}{DFG}} on development of a bleeding-edge mathematical model of phytoplankton %growth, in collaboration with colleageus in JSPS (Japan), GEOMAR (Germany) and Uni. Liverpool (UK) \item Extension of a model for simulating a lab experiment on microorganismal growth, coagulation/flocculation and nutrient recycling processes  % in collaboration with colleagues in ICBM 
+     \item Leading a project funded by \href{https://www.dfg.de/en}{\color{pblue}{DFG}} on development of a bleeding-edge mathematical model of phytoplankton %growth, in collaboration with colleageus in JSPS (Japan), GEOMAR (Germany) and Uni. Liverpool (UK) \item Extension of a model for simulating a lab experiment on microorganismal growth, coagulation/flocculation and nutrient recycling processes  % in collaboration with colleagues in ICBM 
      \item Adaptation of a numerical model for simulating the biogeochemistry of a coastal system.
      \item Supervision of two postdoctoral researchers
     \end{itemize}
@@ -403,7 +412,7 @@ As a continuous learner, I enjoy discovering current technologies and developing
 	{\href{https://www.hereon.de/}{\color{pblue}{Helmholtz-Zentrum Hereon, Germany}}}
 	{\textit{Tasks}:
 	\begin{itemize}[topsep=0pt,itemsep=0pt,partopsep=0pt, parsep=0pt, leftmargin=*]
-     \item Leading a project funded by \href{https://www.umweltbundesamt.de/en}{\color{blue}{UBA}} on development and application of a 3-D physical-biogeochemical model %, and its application on the North Sea
+     \item Leading a project funded by \href{https://www.umweltbundesamt.de/en}{\color{pblue}{UBA}} on development and application of a 3-D physical-biogeochemical model %, and its application on the North Sea
         %\item Preparation of interim-reports in german
         \item Supervision of a postdoctoral scientist
     \end{itemize}
