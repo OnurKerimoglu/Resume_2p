@@ -350,13 +350,15 @@
 % NOTE: we use href instead of url so user can decide textformatting since url
 % automatically uses \texttt{} as format for the url
 \newcommand*{\cvbirthday}[1]{\cvcustomdata{\faUser}{#1}}
-\newcommand*{\cvaddress}[1]{\cvcustomdata{\faEnvelope}{#1}}
+%\newcommand*{\cvaddress}[1]{\cvcustomdata{\faEnvelope}{#1}}
+\newcommand*{\cvlocation}[1]{\cvcustomdata{\faMapMarker}{#1}}
 \newcommand*{\cvphone}[1]{\cvcustomdata{\faPhone}{\href{tel:#1}{#1}}}
 \newcommand*{\cvsite}[2]{\cvcustomdata{\faGlobe}{\href{#1}{#2}}}
 \newcommand*{\cvmail}[1]{\cvcustomdata{\faAt}{\href{mailto:#1}{#1}}}
 \newcommand*{\cvkey}[2]{\cvcustomdata{\faKey}{%
-	\href{https://keyserver.ubuntu.com/pks/lookup?search=#2\&op=vindex\&fingerprint=on}{#1}%
-}}
+	\href{https://keyserver.ubuntu.com/pks/lookup?search=#2\&op=vindex\&fingerprint=on}{#1}}}
+\newcommand*{\cvlinkedin}[2]{\cvcustomdata{\faLinkedin}{\href{#1}{#2}}}
+\newcommand*{\cvgithub}[2]{\cvcustomdata{\faGithub}{\href{#1}{#2}}}
 
 % TODO find a cleaner solution for consistent spacing
 \newcommand{\nameandjob}{%
