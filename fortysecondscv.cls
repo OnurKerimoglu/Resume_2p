@@ -281,7 +281,7 @@
 	{\color{pseccolor}\sectionline}%
 % set spaces before and after sidesections: <left><before><after>
 % "starred version kills the indentation of the paragraph following the title"
-\titlespacing*{\subsubsection}{0pt}{0.5ex}{1ex}
+\titlespacing*{\subsubsection}{0pt}{2.5ex}{1ex}
 
 
 %-------------------------------------------------------------------------------
